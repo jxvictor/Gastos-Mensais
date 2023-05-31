@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="css/estilo.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Editar gasto</h1>
+    <div class="container">
+        <div class="alert alert-success" role="alert">
+            Gasto editado com sucesso!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Dados inválidos!
+        </div>
+          <div class="form-group">
+            <label>Id</label>
+            <input type="text" class="form-control" id="id" placeholder="Digite o id do gasto que você quer editar">
+        </div>
+        <div class="form-group">
+            <label>Nome</label>
+            <input type="text" class="form-control" id="nome" placeholder="Digite o nome do gasto">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Data</label>
+            <input type="text" class="form-control" id="data" placeholder="Digite a data dd/mm/yy">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Valor</label>
+            <input type="number" class="form-control" id="valor" placeholder="Digite o valor (com .)">
+        </div>
+        <button type="button" id="btnEditar" class="btn btn-primary">Enviar</button>
+        <a class="btn btn-danger" href="index.html">Voltar</a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="service.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+GET http://localhost:8080/api/gastos
+###
+GET http://localhost:8080/api/gastos/1
+###
+POST http://localhost:8080/api/gastos
+Content-Type: application/json
+
+{
+    "nome": "Combustível",
+    "data": "04/06/2022",
+    "valor": 200.00
+}
+
+###
+
+PUT http://localhost:8080/api/gastos/5
+Content-Type: application/json
+
+{
+    "nome": "PIRIPAQUE DO CHAVES",
+    "data": "06/06/2022",
+    "valor": 50.50
+}
+
+###
+
+DELETE http://localhost:8080/api/gastos/5
